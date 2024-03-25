@@ -6,13 +6,13 @@ void executeCarga(int carga){
     for(int i = 0; i <carga; i++);
 }
 
-void ordem_n(int n, int carga){  //carga = quantidade intruções
-    for(int i = 0; i <n; i++){  // carga*n
+void ordem_n(int n, int carga){  
+    for(int i = 0; i <n; i++){  
         executeCarga(carga);
     }
 }
 
-void ordem_n2(int n, int carga){  // n^n
+void ordem_n2(int n, int carga){  
     for(int i = 0; i <n; i++){
         for(int j = 0; j <n; j++){
         executeCarga(carga);
@@ -20,14 +20,14 @@ void ordem_n2(int n, int carga){  // n^n
     }
 }
 
-void ordem_logn(int n, int carga){  // n^n
+void ordem_logn(int n, int carga){  
     while(n > 0){
         executeCarga(carga);
         n = n/ 2;
     }
 }
 
-void ordem_nlogn(int n, int carga){  // n^n
+void ordem_nlogn(int n, int carga){  
     for(int i = 0; i <n; i++){
         int j = n;
         while(j > 0){
