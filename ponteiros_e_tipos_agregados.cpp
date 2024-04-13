@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring> // Para strcpy
+#include <cstring> 
 using namespace std;
 typedef struct produto {
     int codigo;

@@ -142,7 +142,7 @@ int main(){
 
     int * result = arrayMerge(vector1, length1, vector2, length2);
     for (int i = 0; i < n1 + n2; i++) {
-         cout << "ArrayyMerge:" << result[i] << endl;
+         cout << "ArrayMerge:" << result[i] << endl;
         }
     return 0;
 }
