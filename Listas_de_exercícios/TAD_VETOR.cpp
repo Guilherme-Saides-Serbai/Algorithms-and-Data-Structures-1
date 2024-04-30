@@ -147,13 +147,30 @@ class Vetor{
         }
 
         // Imprime todos os elementos no formato [1,2,3]
-        //void print();
+        void print(){
+            for(int i=0;i<size-1;i++){
+                cout << array[i] << endl;
+            }
+        }
 
-   // private:
+    private:
 	    // Dobrar a capacidade quando não houver mais espaço
 	    // Reduzir a capacidade pela metade quando for inferior a 25% de ocupação
-        //void gerenciaCapacidade();        
-}};
+        void gerenciaCapacidade(){
+            if(size==capacity){
+                capacity=2*capacity;
+                array=new int(capacity);
+                   for(int i=0;i<capacity;i++){
+                       array[i]=initial_value;
+            }
+        }    
+        if(size=25*size/100){
+            capacity=capacity/2;
+             array=new int(capacity);
+                for(int i=0;i<capacity;i++){
+                    array[i]=initial_value;
+        }   
+}}}};
 
 int main() {
     // Criando um objeto Vetor com capacidade 10, tamanho inicial 0 e sem valor inicial
