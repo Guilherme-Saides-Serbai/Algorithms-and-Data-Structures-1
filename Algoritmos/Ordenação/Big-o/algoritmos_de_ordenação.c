@@ -1,7 +1,7 @@
 int selection_sort(int v[],int n){
-    int position_min=0;
-    for(int i=0;i<n;i++){
-        if(v[i]<v[position_min]){
+    int position_min=0;//O(1)
+    for(int i=0;i<n;i++){//O(N)
+        if(v[i]<v[position_min]){//O(1)
             position_min=i;
         }
     }
