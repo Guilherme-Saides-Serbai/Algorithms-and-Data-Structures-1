@@ -18,13 +18,20 @@ bool buscaSequencial(int elemento, int* v, int tam){
         return true;
     }
     else{
-        return buscaSequencial(elemento,v+1,tam-1);
+        return buscaSequencial(elemento,v,tam-1);
     }
 }
-
-
-int main() {
-    int x = 48, y = 18;
-    printf("MDC(%d, %d) = %d\n", x, y, mdc(x, y));
-    return 0;
+bool buscaBinariaRecursiva(int elemento, int* v, int inicio, int fim) {
+    if (inicio > fim) {
+        return false;
+    }
+    int meio = inicio + (fim - inicio) / 2;
+    if (v[meio] == elemento) {
+        return true;
+    }
+    if (elemento < v[meio]) {
+        return buscaBinariaRecursiva(elemento, v, inicio, meio - 1);
+    } else {
+        return buscaBinariaRecursiva(elemento, v, meio + 1, fim);
+    }
 }

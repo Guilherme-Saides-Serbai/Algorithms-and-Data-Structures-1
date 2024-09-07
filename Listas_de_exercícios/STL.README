@@ -1,0 +1,62 @@
+# STL em C++: Funções e Características Importantes
+
+Este documento fornece um resumo das principais funções e características da **Standard Template Library (STL)** em C++, com foco em laços de repetição e funções úteis.
+
+## Contêineres
+
+### `vector`
+- **Descrição**: Contêiner dinâmico de arrays. Suporta redimensionamento automático e acesso rápido por índice.
+- **Métodos Importantes**:
+  - `push_back()`: Adiciona um elemento ao final.
+  - `pop_back()`: Remove o último elemento.
+  - `size()`: Retorna o número de elementos.
+  - `empty()`: Verifica se o contêiner está vazio.
+  - `at()`: Acesso seguro por índice.
+  - `begin()`, `end()`: Iteradores para o início e o fim.
+
+### `list`
+- **Descrição**: Lista duplamente encadeada. Permite inserções e remoções eficientes em qualquer posição.
+- **Métodos Importantes**:
+  - `push_front()`, `push_back()`: Adiciona elementos no início ou no final.
+  - `pop_front()`, `pop_back()`: Remove elementos do início ou do final.
+  - `size()`, `empty()`, `begin()`, `end()`, `insert()`, `erase()`, `clear()`: Operações básicas de lista.
+
+### `forward_list`
+- **Descrição**: Lista encadeada simples. Mais eficiente em termos de memória, mas acesso unidirecional.
+- **Métodos Importantes**:
+  - `push_front()`, `pop_front()`: Adiciona ou remove elementos no início.
+  - `begin()`, `end()`, `insert_after()`, `erase_after()`, `clear()`: Operações básicas de lista.
+
+### `deque`
+- **Descrição**: Contêiner de fila dupla. Suporta inserções e remoções eficientes tanto no início quanto no fim.
+- **Métodos Importantes**:
+  - `push_front()`, `push_back()`: Adiciona elementos no início ou no final.
+  - `pop_front()`, `pop_back()`: Remove elementos do início ou do final.
+  - `at()`, `begin()`, `end()`, `size()`, `empty()`: Operações básicas de deque.
+
+### `set`
+- **Descrição**: Conjunto de elementos únicos, ordenados automaticamente.
+- **Métodos Importantes**:
+  - `insert()`, `erase()`, `find()`, `count()`, `begin()`, `end()`, `size()`, `empty()`: Operações básicas de conjunto.
+
+### `map`
+- **Descrição**: Mapeamento de pares chave-valor únicos. Chaves únicas, valores acessados via chave.
+- **Métodos Importantes**:
+  - `insert()`, `erase()`, `find()`, `count()`, `begin()`, `end()`, `size()`, `empty()`: Operações básicas de mapa.
+
+### `unordered_set`
+- **Descrição**: Conjunto de elementos únicos, sem ordenação garantida. Mais rápido para operações de busca.
+- **Métodos Importantes**:
+  - `insert()`, `erase()`, `find()`, `count()`, `begin()`, `end()`, `size()`, `empty()`: Operações básicas de conjunto não ordenado.
+
+### `unordered_map`
+- **Descrição**: Mapeamento de pares chave-valor únicos, sem ordenação garantida. Mais rápido para buscas.
+- **Métodos Importantes**:
+  - `insert()`, `erase()`, `find()`, `count()`, `begin()`, `end()`, `size()`, `empty()`: Operações básicas de mapa não ordenado.
+
+## Algoritmos
+
+### Ordenação e Manipulação
+- `sort()`: Ordena os elementos.
+  ```cpp
+  sort(vec.begin(), vec.end());
