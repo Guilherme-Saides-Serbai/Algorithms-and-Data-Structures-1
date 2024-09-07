@@ -25,6 +25,4 @@ This repository contains all the materials, exercises, and projects related to t
    - Each folder contains code and notes on specific topics.
    - You can run the code snippets for hands-on learning and modify them as needed.
 
-3. **Study the examples**:
-   - Each example is well-documented to explain the working of the algorithm or data structure.
 
