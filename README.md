@@ -1,8 +1,8 @@
 ---
 
-# **Algorithms and Data Structure 1**
+# **Algorithms and Data Structure**
 
-This repository contains all the materials, exercises, and projects related to the **Algorithms and Data Structures 1** course, part of the **Computer Science** curriculum at **UTFPR (Universidade Tecnológica Federal do Paraná)**. The content here is designed to help in the understanding and practice of fundamental algorithms and data structures.
+This repository contains all the materials, exercises, and projects related to the **Algorithms and Data Structures** course, part of the **Computer Science** curriculum at **UTFPR (Universidade Tecnológica Federal do Paraná)**. The content here is designed to help in the understanding and practice of fundamental algorithms and data structures.
 
 ---
 
@@ -18,7 +18,7 @@ This repository contains all the materials, exercises, and projects related to t
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/Guilherme-Saides-Serbai/Algorithms-and-Data-Structures-1
+    git clone https://github.com/Guilherme-Saides-Serbai/Algorithms-and-Data-Structures
     ```
 
 2. **Navigate to the desired folder**:
